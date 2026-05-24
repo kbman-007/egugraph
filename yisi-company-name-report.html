@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>“奕思”相关公司名称检索与命名建议</title>
+    <meta
+      name="description"
+      content="公开网页中名称包含“奕思”的公司主体整理，以及对“奕思科技”作为教育科技品牌名的风险判断与替代建议。"
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #18202b;
+        --muted: #687386;
+        --line: #dfe5ee;
+        --paper: #f6f8fb;
+        --panel: #ffffff;
+        --accent: #245f73;
+        --accent-2: #7a4f12;
+        --danger: #a3382f;
+        --warning: #8a5a00;
+        --ok: #216a4c;
+        --shadow: 0 20px 45px rgba(22, 32, 43, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          linear-gradient(180deg, #eef4f6 0, rgba(238, 244, 246, 0) 340px),
+          var(--paper);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0 56px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 28px;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 820px;
+        font-size: clamp(32px, 5vw, 64px);
+        line-height: 1.06;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 20px 0 0;
+        color: #344052;
+        font-size: 18px;
+      }
+
+      .meta {
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: var(--shadow);
+      }
+
+      .meta strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .meta p {
+        margin: 0 0 12px;
+        font-size: 15px;
+      }
+
+      .meta p:last-child {
+        margin-bottom: 0;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      .band {
+        padding: 24px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 24px;
+        letter-spacing: 0;
+      }
+
+      h3 {
+        margin: 0 0 8px;
+        font-size: 17px;
+        letter-spacing: 0;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .summary-item {
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: #fbfcfe;
+      }
+
+      .summary-item strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--accent-2);
+        font-size: 14px;
+      }
+
+      .summary-item p {
+        margin: 0;
+        color: #354153;
+      }
+
+      .verdict {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 20px;
+        align-items: start;
+      }
+
+      .callout {
+        border-left: 5px solid var(--danger);
+        padding: 18px 20px;
+        background: #fff7f5;
+      }
+
+      .callout p {
+        margin: 0;
+      }
+
+      .recommendation-list {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .recommendation-list li {
+        margin: 8px 0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      table {
+        width: 100%;
+        min-width: 1040px;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        padding: 13px 14px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #edf3f5;
+        color: #293648;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      tbody tr:hover {
+        background: #f8fbfd;
+      }
+
+      .name {
+        font-weight: 800;
+        color: #101822;
+      }
+
+      .tag {
+        display: inline-block;
+        min-width: 46px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .tag.high {
+        color: #84221b;
+        background: #ffe2de;
+      }
+
+      .tag.mid {
+        color: #744a00;
+        background: #fff0c9;
+      }
+
+      .tag.low {
+        color: #17583d;
+        background: #daf3e8;
+      }
+
+      .names {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .name-option {
+        border: 1px solid var(--line);
+        padding: 18px;
+        background: #fbfcfe;
+      }
+
+      .name-option b {
+        display: block;
+        margin-bottom: 8px;
+        color: #122033;
+        font-size: 22px;
+      }
+
+      .name-option span {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .notes {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      footer {
+        margin-top: 34px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 860px) {
+        header,
+        .verdict {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-grid,
+        .names {
+          grid-template-columns: 1fr;
+        }
+
+        .page {
+          width: min(100% - 24px, 1180px);
+          padding-top: 28px;
+        }
+
+        .band {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <p class="eyebrow">公开检索报告 / 品牌命名风险</p>
+          <h1>“奕思”相关公司名称检索与命名建议</h1>
+          <p class="lead">
+            本页整理公开网页中名称包含“奕思”的公司主体，并对“奕思科技”
+            作为教育科技、知识图谱或 AI 学习产品品牌名的可用性做初步判断。
+          </p>
+        </div>
+        <aside class="meta" aria-label="报告元信息">
+          <p><strong>检索日期</strong>2026-05-24</p>
+          <p><strong>检索范围</strong>公开网页、公司信息聚合页、香港公司注册处公开清单、台湾公司登记资料等</p>
+          <p><strong>注意</strong>本报告不是法律意见，也不是完整商标或工商尽调。</p>
+        </aside>
+      </header>
+
+      <section class="band">
+        <h2>核心结论</h2>
+        <div class="summary-grid">
+          <article class="summary-item">
+            <strong>不建议直接使用“奕思科技”</strong>
+            <p>
+              大陆、香港、台湾均能检索到“奕思科技”或高度相近主体，
+              其中大陆和台湾存在较强同名风险。
+            </p>
+          </article>
+          <article class="summary-item">
+            <strong>“奕思”声场不够干净</strong>
+            <p>
+              相关主体覆盖科技、半导体、电商、服饰、生技、咨询、艺术顾问等领域，
+              名称识别度容易被稀释。
+            </p>
+          </article>
+          <article class="summary-item">
+            <strong>教育科技品牌应换更独特的产品名</strong>
+            <p>
+              如果产品核心是知识图谱、学习路径和认知推演，
+              更建议使用“知径”“知序”“学谱”等更明确、更少模板感的名称。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>命名判断</h2>
+        <div class="verdict">
+          <div class="callout">
+            <p>
+              判断：<strong>“奕思科技”不适合作为新教育科技品牌主名。</strong>
+              它既有“XX科技”的模板化问题，也有同名或近名公司占位问题。
+              如果必须保留“奕思”，建议只作为内部公司名的一部分，不作为对外产品品牌。
+            </p>
+          </div>
+          <div>
+            <h3>建议方向</h3>
+            <ul class="recommendation-list">
+              <li>公司注册名和产品品牌名分开处理，产品名不要带“科技”。</li>
+              <li>若强调棋局、策略、推演，优先考虑“弈”而不是“奕”。</li>
+              <li>避免直接使用“弈思/奕思科技”，改成更独特的组合词。</li>
+              <li>上线前继续做商标检索、域名检索、微信/小红书/应用商店名称检索。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>名称中包含“奕思”的公开主体</h2>
+        <div class="table-wrap" role="region" aria-label="奕思相关公司表" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>名称</th>
+                <th>地区</th>
+                <th>状态/时间</th>
+                <th>备注</th>
+                <th>冲突等级</th>
+                <th>来源</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">广州奕思科技有限公司</td>
+                <td>广州</td>
+                <td>2020-01-08 成立，在营</td>
+                <td>注册资本 200 万人民币；业务含软件、电子产品、消防设备等。</td>
+                <td><span class="tag high">高</span></td>
+                <td><a href="https://m.zhipin.com/gongsis/797fa54c7db808210XN52Nu8EFI~.html">BOSS直聘</a></td>
+              </tr>
+              <tr>
+                <td class="name">广州奕思网络科技有限公司</td>
+                <td>广州</td>
+                <td>页面称 2007 年 8 月成立</td>
+                <td>招聘页显示偏中医药、淘宝电商、美容保健产品。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://www.job5156.com/comp/455896">智通直聘</a></td>
+              </tr>
+              <tr>
+                <td class="name">广州奕思服饰有限公司</td>
+                <td>广州</td>
+                <td>状态未核准</td>
+                <td>服装设计、生产、供应链服务。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.tanzhi.cn/companies/a60037be-5267-436b-a341-41e8d1ee0c0c/">谈职</a></td>
+              </tr>
+              <tr>
+                <td class="name">合肥奕思集成电路有限公司</td>
+                <td>合肥</td>
+                <td>2015-11-11 成立，存续</td>
+                <td>注册资本 3610 万；集成电路、半导体设计方向。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://www.zhaopin.com/companydetail/91344V05N6KF11XWQ4.htm">智联招聘</a></td>
+              </tr>
+              <tr>
+                <td class="name">上海奕思捷技术有限公司</td>
+                <td>上海</td>
+                <td>2025-09-02 成立，存续</td>
+                <td>电子元器件、半导体、通信设备相关。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://shuidi.cn/company-c296e31233b70e3b566315bcaa6ccb01.html">水滴信用</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思（上海）信息科技有限公司</td>
+                <td>上海</td>
+                <td>2021 年 5 月吊销</td>
+                <td>曾为“盖世电竞”主体；公开报道中与区块链、发币争议相关。</td>
+                <td><span class="tag high">高</span></td>
+                <td>
+                  <a href="https://finance.sina.com.cn/roll/2019-12-07/doc-iihnzahi5834235.shtml">新浪财经</a>
+                  /
+                  <a href="https://pdf.dfcfw.com/pdf/H2_AN202512161801672141_1.pdf?1765899387000.pdf=">公开法律文件</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="name">北京奕思众合科技有限公司</td>
+                <td>北京</td>
+                <td>历史名称</td>
+                <td>后更名为北京奕斯伟科技有限公司，相关材料中作为历史主体出现。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://oss.valueonline.cn/cloud-ipo-bucket/public/15448543975043480913.pdf">招股书</a></td>
+              </tr>
+              <tr>
+                <td class="name">北京奕思致远科技有限公司</td>
+                <td>北京</td>
+                <td>历史名称</td>
+                <td>现为北京奕斯伟科技集团有限公司的曾用名。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://shuidi.cn/company-80b70af08c10f62bd18ddc66624d1fcc.html">水滴信用</a></td>
+              </tr>
+              <tr>
+                <td class="name">合肥奕思投资有限公司</td>
+                <td>合肥</td>
+                <td>2018 年 9 月注销</td>
+                <td>曾作为海外收购主体；公开披露称无实际业务、未实缴。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://basic.10jqka.com.cn/688783/company.html">同花顺</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思股份有限公司</td>
+                <td>台湾台北</td>
+                <td>核准设立</td>
+                <td>统编 28087626；曾名“奕思有限公司”。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://www.findcompany.com.tw/%E5%A5%95%E6%80%9D%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">FindCompany</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思有限公司</td>
+                <td>台湾新北/台北</td>
+                <td>历史名称</td>
+                <td>后变更为“奕思股份有限公司”。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.findcompany.com.tw/%E5%A5%95%E6%80%9D%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">FindCompany</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思科技有限公司</td>
+                <td>台湾台北</td>
+                <td>2026-05-13 成立</td>
+                <td>台北南港；资本额 200 万新台币；电脑及周边设备批发。</td>
+                <td><span class="tag high">高</span></td>
+                <td>
+                  <a href="https://mygov.tw/company/80680205">MyGov</a>
+                  /
+                  <a href="https://www.findcompany.com.tw/index.php/%E5%AE%9C%E8%A9%AE%E6%8A%95%E8%B3%87%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">FindCompany</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="name">奕思生技股份有限公司</td>
+                <td>台湾台北</td>
+                <td>2025-01-23 成立，核准设立</td>
+                <td>生物技术、水产、农林渔牧顾问等。</td>
+                <td><span class="tag low">低</span></td>
+                <td>
+                  <a href="https://serv.gcis.nat.gov.tw/pub/cmpy/reportAction.do?fileName=379100000Gsetup11401.pdf&method=report&reportClass=cmpyCity&subPath=11401">台湾公司登记清册</a>
+                  /
+                  <a href="https://lawplayer.com/company/00098226">法律人</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="name">習奕思有限公司</td>
+                <td>台湾台中</td>
+                <td>2025-12-17 成立，2026-03-02 解散</td>
+                <td>名称中含“奕思”，但不是“奕思”开头。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://poi.zhupiter.com/br/ym202603o6/p821.html">公司解散清单</a></td>
+              </tr>
+              <tr>
+                <td class="name">諾奕思有限公司</td>
+                <td>台湾</td>
+                <td>状态未核准</td>
+                <td>出版、教育训练相关资料中出现。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.eslite.com/product/1001223281814512">诚品</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思科技有限公司 / IGNIS TECHNOLOGY LIMITED</td>
+                <td>香港</td>
+                <td>2013-05-03 成立，已解散</td>
+                <td>香港同名“奕思科技有限公司”。</td>
+                <td><span class="tag high">高</span></td>
+                <td><a href="https://hkg.databasesets.com/zh-hant/gongsimingdan/number/1902091">香港公司数据集</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思環球有限公司 / 2C INCORPORATION LIMITED</td>
+                <td>香港</td>
+                <td>2006-11-23 成立，已解散</td>
+                <td>香港公司。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://hkg.databasesets.com/gongsimingdan/number/1089959">香港公司数据集</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思亞洲有限公司 / EGX Asia Limited</td>
+                <td>香港</td>
+                <td>2015-10-19 成立，后更名</td>
+                <td>现名“全方諮詢顧問有限公司 / Transform Advisory Group Limited”。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://hkg.databasesets.com/zh-hant/gongsimingdan/number/2297195">香港公司数据集</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思策劃有限公司 / Instance Cloud Technology Limited</td>
+                <td>香港</td>
+                <td>2017-08-14 成立，仍注册</td>
+                <td>科技、策划类。</td>
+                <td><span class="tag mid">中</span></td>
+                <td><a href="https://hkg.databasesets.com/gongsimingdan/number/2566302">香港公司数据集</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思藝術顧問有限公司 / A Concept Art Consultancy Limited</td>
+                <td>香港</td>
+                <td>2018-10-08 成立，仍注册</td>
+                <td>商务咨询、艺术顾问。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://hkg.databasesets.com/zh-hant/gongsimingdan/number/2752918">香港公司数据集</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思管理有限公司 / The Hex Management Limited</td>
+                <td>香港</td>
+                <td>2022-01-03 成立</td>
+                <td>管理类公司。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.cr.gov.hk/docs/wrpt/RNC063_2022.01.03-2022.01.09.pdf">香港公司注册处</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思配方國際有限公司 / INES FORMULAR INTERNATIONAL CO., LIMITED</td>
+                <td>香港</td>
+                <td>2025-02-03 成立，仍登记</td>
+                <td>配方、国际类。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.cr.gov.hk/docs/wrpt/wk_new%26changednamecoys_20250203.pdf">香港公司注册处</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思工業有限公司 / INES INDUSTRIAL CO., LIMITED</td>
+                <td>香港</td>
+                <td>2025-06-13 成立，仍登记</td>
+                <td>工业类。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.cr.gov.hk/docs/wrpt/RNC063_2025.06.09-2025.06.15.pdf">香港公司注册处</a></td>
+              </tr>
+              <tr>
+                <td class="name">奕思諮詢有限公司 / Eloy Consulting Limited</td>
+                <td>香港</td>
+                <td>2025-12-22 成立</td>
+                <td>咨询类。</td>
+                <td><span class="tag low">低</span></td>
+                <td><a href="https://www.cr.gov.hk/docs/wrpt/wk_new%26changednamecoys_20251222.pdf">香港公司注册处</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="notes">
+          冲突等级为命名风险的初步主观判断：高代表同名或科技/教育场景强相关；
+          中代表名称相近或科技行业相近；低代表语义较远、地区或行业影响较弱。
+        </p>
+      </section>
+
+      <section class="band">
+        <h2>可替代命名方向</h2>
+        <div class="names">
+          <article class="name-option">
+            <b>知径</b>
+            <span>“知识路径”的压缩表达，适合学习路径、知识图谱、个性化规划。</span>
+          </article>
+          <article class="name-option">
+            <b>知序</b>
+            <span>强调知识结构、顺序、体系和认知组织，气质理性克制。</span>
+          </article>
+          <article class="name-option">
+            <b>学谱</b>
+            <span>直接指向学习图谱，短、好懂、产品感强，适合 MVP 传播。</span>
+          </article>
+          <article class="name-option">
+            <b>问径</b>
+            <span>带有“问道寻径”的中文意象，适合探索式学习和引导式产品。</span>
+          </article>
+          <article class="name-option">
+            <b>弈知图</b>
+            <span>保留“弈”的策略推演感，同时让“知识图谱”的方向更明显。</span>
+          </article>
+          <article class="name-option">
+            <b>Yisi Graph</b>
+            <span>如果必须保留“奕思/弈思”的发音，可弱化中文撞名，转为英文产品组合。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>下一步尽调清单</h2>
+        <ul class="recommendation-list">
+          <li>在中国商标网检索第 9、35、41、42 类，以及教育软件相关近似类别。</li>
+          <li>检索公司注册名、产品名、公众号、小程序、App Store、应用宝、小红书、知乎、B 站占位。</li>
+          <li>检查主要域名：.com、.cn、.ai、.io，以及中文拼音域名可用性。</li>
+          <li>对候选名做一次 5 秒测试：用户能否读出来、记住、猜到产品方向。</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          本页面由公开搜索结果整理生成，仅用于命名讨论和早期风险判断。
+          若用于公司注册、商标申请或融资材料，请以官方工商、商标数据库和专业法律意见为准。
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
